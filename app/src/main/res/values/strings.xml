@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Project One</string>
+
+    <!--Company Name & Website-->
+    <string name="companyName">\tAmazing-Land</string>
+    <string name="website">website</string>
+
+    <!--Slogan-->
+    <string name="slogan">Come drink a cup of coffee with us and feel amazing.</string>
+
+    <!--Company Extra Info-->
+    <string name="workingHours">\t7:00 &#8211; 22:00</string>
+    <string name="companyAdress">\t24, Amazing Street, All Amazing</string>
+    <string name="companyNumber">\t(+000) 555-YOU-ARE-AMAZING</string>
+    <string name="companyURL">\thttps://amazing-land.com</string>
+    <string name="companyEMail">\tamazingland@coffee.com</string>
+    <string name="workingDays">\tEvery Day</string>
+
+    <!--Credits-->
+    <string name="credits">Credits:</string>
+    <string name="creditOne">freepik.com</string>
+    <string name="creditTwo">pixabay.com/pt/users/dragosungureanu140&#8211;732747</string>
+
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="nullSize">0dp</dimen>
+
+    <!--Company Title-->
+    <dimen name="headerMarginBottom">10dp</dimen>
+    <dimen name="headerLogo">36dp</dimen>
+    <dimen name="headerMarginOthers">20dp</dimen>
+    <dimen name="headerTextSizePortrait">28sp</dimen>
+    <dimen name="headerTextSizeLandscape">24sp</dimen>
+
+    <!--Button-->
+    <dimen name="buttonHeight">24dp</dimen>
+    <dimen name="buttonTextSize">14sp</dimen>
+
+    <!--Image-->
+    <dimen name="imageHeight">220dp</dimen>
+    <dimen name="imageHeightLandscape">180dp</dimen>
+    <dimen name="imageMarginLeftLandscape">20dp</dimen>
+
+    <!--Slogan-->
+    <dimen name="sloganMarginTop">8dp</dimen>
+    <dimen name="sloganMarginBottom">4dp</dimen>
+    <dimen name="sloganMarginOthers">16dp</dimen>
+    <dimen name="SloganTextSize">16sp</dimen>
+
+    <!--Divider-->
+    <dimen name="marginDivider">12dp</dimen>
+    <dimen name="dividerHeight">1dp</dimen>
+    <dimen name="dividerWidth">1dp</dimen>
+
+    <!--General Info-->
+    <dimen name="infoMarginSides">20dp</dimen>
+    <dimen name="infoMarginTop">12dp</dimen>
+    <dimen name="infoTextSize">20sp</dimen>
+    <dimen name="infoMarginBottom">10dp</dimen>
+    <dimen name="iconSize">32dp</dimen>
+
+    <!--Credits-->
+    <dimen name="creditsMargin">5dp</dimen>
+
+</resources>

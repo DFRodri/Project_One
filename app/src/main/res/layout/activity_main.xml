@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.projectone.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/headerMarginBottom"
+        android:layout_marginLeft="@dimen/headerMarginOthers"
+        android:layout_marginRight="@dimen/headerMarginOthers"
+        android:layout_marginTop="@dimen/headerMarginOthers">
+
+        <ImageView
+            android:id="@+id/companyLogo"
+            android:layout_width="@dimen/headerLogo"
+            android:layout_height="@dimen/headerLogo"
+            android:background="@drawable/logo"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/companyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/headerLogo"
+            android:layout_marginEnd="@dimen/infoMarginSides"
+            android:layout_marginLeft="@dimen/infoMarginSides"
+            android:layout_marginRight="@dimen/infoMarginSides"
+            android:layout_marginStart="@dimen/infoMarginSides"
+            android:gravity="center_vertical"
+            android:text="@string/companyName"
+            android:textAllCaps="true"
+            android:textColor="@color/headerTitle"
+            android:textSize="@dimen/headerTextSizePortrait" />
+
+        <Button
+            android:id="@+id/companyURLButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/headerLogo"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_border"
+            android:onClick="goToWebsite"
+            android:text="@string/website"
+            android:textColor="@color/textButton"
+            android:textSize="@dimen/buttonTextSize"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/imageHeight"
+        android:background="@drawable/company_image"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sloganMarginOthers"
+        android:layout_marginRight="@dimen/sloganMarginOthers"
+        android:layout_marginTop="@dimen/sloganMarginTop"
+        android:gravity="center_horizontal"
+        android:text="@string/slogan"
+        android:textColor="@color/sloganText"
+        android:textSize="@dimen/SloganTextSize"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dividerHeight"
+        android:layout_margin="@dimen/marginDivider"
+        android:background="@color/dividerColor" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/infoMarginBottom"
+        android:layout_marginLeft="@dimen/infoMarginSides"
+        android:layout_marginStart="@dimen/infoMarginSides"
+        android:layout_marginTop="@dimen/infoMarginTop"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/companyName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/iconSize"
+            android:layout_marginTop="@dimen/infoMarginTop"
+            android:drawableLeft="@drawable/id_card"
+            android:drawableStart="@drawable/id_card"
+            android:text="@string/companyName"
+            android:textColor="@color/infoText"
+            android:textSize="@dimen/infoTextSize" />
+
+
+        <TextView
+            android:id="@+id/companyAdress"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/iconSize"
+            android:layout_below="@id/companyName"
+            android:layout_marginTop="@dimen/infoMarginTop"
+            android:drawableLeft="@drawable/placeholder"
+            android:drawableStart="@drawable/placeholder"
+            android:text="@string/companyAdress"
+            android:textColor="@color/infoText"
+            android:textSize="@dimen/infoTextSize" />
+
+        <LinearLayout
+            android:id="@+id/workingSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/companyAdress"
+            android:layout_marginTop="@dimen/infoMarginTop">
+
+            <TextView
+                android:id="@+id/companyWorkHours"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/iconSize"
+                android:drawableLeft="@drawable/wall_clock"
+                android:drawableStart="@drawable/wall_clock"
+                android:gravity="center_vertical"
+                android:text="@string/workingHours"
+                android:textColor="@color/infoText"
+                android:textSize="@dimen/infoTextSize" />
+
+            <View
+                android:layout_width="@dimen/dividerWidth"
+                android:layout_height="@dimen/iconSize"
+                android:layout_marginLeft="@dimen/infoMarginSides"
+                android:layout_marginRight="@dimen/infoMarginSides"
+                android:background="@color/dividerColor"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/companyWorkDays"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/iconSize"
+                android:gravity="center_vertical"
+                android:text="@string/workingDays"
+                android:textColor="@color/infoText"
+                android:textSize="@dimen/infoTextSize" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/companyNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/iconSize"
+            android:layout_below="@id/workingSchedule"
+            android:layout_marginTop="@dimen/infoMarginTop"
+            android:drawableLeft="@drawable/telephone"
+            android:drawableStart="@drawable/telephone"
+            android:gravity="center_vertical"
+            android:text="@string/companyNumber"
+            android:textColor="@color/infoText"
+            android:textSize="@dimen/infoTextSize" />
+
+
+        <TextView
+            android:id="@+id/companyURL"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/iconSize"
+            android:layout_below="@id/companyNumber"
+            android:layout_marginTop="@dimen/infoMarginTop"
+            android:autoLink="web"
+            android:drawableLeft="@drawable/link"
+            android:drawableStart="@drawable/link"
+            android:gravity="center_vertical"
+            android:linksClickable="true"
+            android:text="@string/companyURL"
+            android:textColorLink="@color/infoText"
+            android:textSize="@dimen/infoTextSize" />
+
+        <TextView
+            android:id="@+id/companyEMail"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/iconSize"
+            android:layout_below="@id/companyURL"
+            android:layout_marginTop="@dimen/infoMarginTop"
+            android:autoLink="email"
+            android:drawableLeft="@drawable/arroba"
+            android:drawableStart="@drawable/arroba"
+            android:gravity="center_vertical"
+            android:linksClickable="true"
+            android:text="@string/companyEMail"
+            android:textColorLink="@color/infoText"
+            android:textSize="@dimen/infoTextSize" />
+
+        <Button
+            android:id="@+id/credits"
+            android:layout_width="@dimen/iconSize"
+            android:layout_height="@dimen/iconSize"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/creditsMargin"
+            android:layout_marginRight="@dimen/creditsMargin"
+            android:background="@drawable/info"
+            android:onClick="credits" />
+
+    </RelativeLayout>
+
+</LinearLayout>
