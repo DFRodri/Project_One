@@ -11,20 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/headerMarginBottom"
-        android:layout_marginLeft="@dimen/headerMarginOthers"
-        android:layout_marginRight="@dimen/headerMarginOthers"
-        android:layout_marginTop="@dimen/headerMarginOthers">
 
-        <ImageView
-            android:id="@+id/companyLogo"
-            android:layout_width="@dimen/headerLogo"
-            android:layout_height="@dimen/headerLogo"
-            android:background="@drawable/logo"
-            tools:ignore="ContentDescription" />
+        android:layout_marginTop="@dimen/headerMarginOthers">
 
         <TextView
             android:id="@+id/companyTitle"
             android:layout_width="wrap_content"
+            android:drawableLeft="@drawable/logo"
+            android:drawableStart="@drawable/logo"
             android:layout_height="@dimen/headerLogo"
             android:layout_marginEnd="@dimen/infoMarginSides"
             android:layout_marginLeft="@dimen/infoMarginSides"
@@ -33,8 +27,7 @@
             android:gravity="center_vertical"
             android:text="@string/companyName"
             android:textAllCaps="true"
-            android:textColor="@color/headerTitle"
-            android:textSize="@dimen/headerTextSizePortrait" />
+            android:textColor="@color/headerTitle" />
 
         <Button
             android:id="@+id/companyURLButton"
